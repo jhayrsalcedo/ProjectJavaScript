@@ -10,6 +10,7 @@
                     41, 53, 55, 61, 51, 44];
 
         var highScore = 0;
+        var bestSolution = [];
         var output;
     
 
@@ -22,8 +23,18 @@
             }
         }
 
+        var bestSolutions = [];
+        for (var i = 0; i < scores.length; i++){
+            if( scores[i] == highScore){
+                bestSolutions.push(i);
+            }
+        }
+       
+
+        
         console.log("Bubble test: " + scores.length);
         console.log("Highest score: " + highScore);
+        console.log("Solution with the best score: " + bestSolutions );
     </script>
         
     <title>Bubble Tea</title>
